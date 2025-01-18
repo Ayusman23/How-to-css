@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; /* Push the image further back */
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: -1; /* Place the filter between the content and the background image */
+}
+
+
+.content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+}
+
+.location .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.location span {
+    font-size: 1rem;
+    color: #333;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #333;
+}

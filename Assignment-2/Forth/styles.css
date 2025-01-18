@@ -1,0 +1,113 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic layout and font styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+.container {
+    width: 50%;
+    height:90%;
+    max-width: 900px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header image */
+.header-image {
+    width: 100%;
+    height: 300px;
+    background-image: url('P-2.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Profile image container with relative position for layering */
+.profile-image-container {
+    position: relative;
+    top: -70px; /* To move the profile image slightly up */
+    margin: 0 auto;
+    display: inline-block;
+    width: 140px; /* Adjust the size as needed */
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds shadow to profile image */
+}
+
+/* Profile image styling */
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white; /* Optional: adds a border around the profile image */
+}
+
+/* Name and profession */
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+
+/* Bio styling */
+.bio {
+    font-size: 2rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+/* Social links */
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0077b5;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #005582;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+   
+    
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+}
